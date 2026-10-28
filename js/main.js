@@ -53,7 +53,7 @@ function initMobileNav() {
 
 function initActiveNav() {
   const links = document.querySelectorAll(".desktop-nav a");
-  const sections = ["top", "listings", "move", "about"]
+  const sections = ["top", "about", "move", "listings", "gallery", "services"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 
@@ -72,6 +72,13 @@ function initActiveNav() {
   );
 
   sections.forEach((section) => observer.observe(section));
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      links.forEach((l) => l.classList.remove("is-active"));
+      link.classList.add("is-active");
+    });
+  });
 }
 
 function animateCount(el) {
