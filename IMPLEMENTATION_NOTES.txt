@@ -1,0 +1,20 @@
+Implementation Notes
+
+1. Tools and frameworks used:
+- HTML5: Used semantic tags like header, nav, main, section, and footer so the site structure is clean and good for accessibility.
+- CSS3: Used pure CSS with CSS variables for colors (navy, gold, cream) and fonts. Used CSS Grid and Flexbox for the layout, and clamp() so the text and padding adjust smoothly on mobile, tablet, and desktop without breaking.
+- Vanilla JavaScript: Did not use heavy frameworks like React or Vue because this is a portfolio/marketing website and plain JS makes it load much faster. Used IntersectionObserver for the scroll spy on the navbar links and reveal animations.
+- Swiper.js: Used for the photo carousel in the gallery section so users can swipe easily on phones and tablets.
+- GSAP & ScrollTrigger: Added for smooth entrance animations on the hero title, with fallback to normal animations if it doesn't load.
+- Google Fonts: Cormorant Garamond for luxury serif headings and Outfit for easy-to-read body text.
+
+
+2. Design Decision:
+In the original website (https://marcimetzger.com/), the about section is just a plain photo next to a big block of text. It looks like a basic template, and visitors can easily scroll past it without noticing her experience and achievements.
+
+In my redesign, I wanted to make Marci look like an established, trustworthy local expert right away:
+- I put her portrait inside a modern rounded frame and added a floating experience badge ("Nearly 30 years serving Pahrump") directly over the image.
+- Instead of burying her track record inside the paragraphs, I built an interactive stats counter below her bio (showing 90+ clients helped, $28.5M closed sales, and 5 years top sales). With JavaScript, these numbers count up smoothly when the visitor scrolls into the section.
+- I added clean serif typography ("Meet your advisor") and a direct call button so potential clients can contact her quickly.
+
+This makes the about section much more engaging to look at, gives instant proof of her credibility, and feels like a high-end luxury realtor instead of a generic template.
